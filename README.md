@@ -13,10 +13,11 @@
  ![이구치사토루](https://github.com/ksj040506/git_repo/assets/170810598/fa62192c-ab30-4a3f-9568-17029c9e6591)
 
 
-폴더 설명
-
+## 폴더 설명
+ 
 https://replit.com/@rlatjwls040506/homework#notes
-notes 수업시간 필기 내용을 적은 것들을 보관하는 폴더
+### notes 
++ 수업시간 필기 내용을 적은 것들을 보관하는 폴더
 
 
 | 주차 | 강의범위 및 내용 | 파일링크 |
