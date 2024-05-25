@@ -15,11 +15,13 @@
 
 ## 폴더 설명
  
-## 필기 링크
-https://replit.com/@rlatjwls040506/homework#notes
 
 ### notes 
 + 수업시간 필기 내용을 적은 것들을 보관하는 폴더
+
+## 필기 링크
+https://replit.com/@rlatjwls040506/homework#notes
+
 
 
 | 주차 | 강의범위 및 내용 | 파일링크 |
