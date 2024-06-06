@@ -42,7 +42,7 @@ esac
 full_number="$1 $2 $region"
 echo "$full_number"
 
-# number.txt이 없다면 만들기
+# 전화번호부가 없다면 만든다.
 if [ ! -e number.txt ] ; then
   touch number.txt
 fi
