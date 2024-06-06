@@ -18,7 +18,7 @@ fi
 # 지역번호 구현하기
 
 #지역번호는 자유롭게 구현하되 최소 5개 있을 것
-local_number=$(cut -d "-" -f1 <<< $2)
+local_number=$(echo $2 | cut -d "-" -f1)
 
 case $local_number in
 
@@ -54,7 +54,6 @@ search=$(grep -w "$1" number.txt)
 
 # 존재하면 전화번호 비교한다. 동일하면 메시지 프린트하고 프로그램 종료
 if [ -n "$search" ] ; then
-  IFS=' ' 
   while read -r line ; 
   do
     stored_number=$(echo "$line" | cut -d " " -f2)
@@ -67,7 +66,7 @@ fi
 
 # 다르면 새로운 전화번호로 추가하고 이름순으로 정렬한다.
 echo "$full_number" >> number.txt
-sort -o number.txt number.txt
+sort -o number.txt -k 1 number.txt
 echo "새 전화번호가 추가되었습니다."
 exit 0
 
