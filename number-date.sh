@@ -54,7 +54,6 @@ search=$(grep -w "$1" number.txt)
 
 # 존재하면 전화번호 비교한다. 동일하면 메시지 프린트하고 프로그램 종료
 if [ -n "$search" ] ; then
-  IFS=' '
   while read -r line ; 
   do
     stored_number=$(echo "$line" | cut -d " " -f2)
@@ -67,7 +66,7 @@ fi
 
 # 다르면 새로운 전화번호로 추가하고 이름순으로 정렬한다.
 echo "$full_number" >> number.txt
-sort -o number.txt -k1 number.txt
+sort -k1 -o number.txt number.txt
 echo "새 전화번호가 추가되었습니다."
 exit 0
 
